@@ -20,7 +20,8 @@ find_package(Eigen3 CONFIG REQUIRED)
 # 添加可执行文件
 add_executable(eigen main.cpp
         eigen.h
-        fft.cpp)
+        fft.cpp
+        cmake-build-debug/ifft.cpp)
 
 # 链接 Eigen3 库
 target_link_libraries(eigen PRIVATE Eigen3::Eigen)
